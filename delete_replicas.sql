@@ -1,0 +1,1 @@
+delete from ex3.db where rowid not in (select max(rowid) from ex3.db group by person_id);
